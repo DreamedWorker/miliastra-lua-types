@@ -17,9 +17,11 @@
 
 ## 快速开始
 
-1. 用 VS Code 打开**本文件夹**（不是单个 `.lua` 文件）。
+1. 用 VS Code 打开**本文件夹**（不是单个 `.lua` 文件），或者将本仓库中的 `mihoyo_client_ui_api.d.lua` 添加到你的奇域脚本文件夹根目录中。
 2. 安装 Lua 扩展（`sumneko.lua` / LuaLS）。
 3. 新建一个 `.lua` 文件，敲 `game.` 或 `script:`，即可看到补全与类型。
+
+> 注意：不要将 `mihoyo_client_ui_api.d.lua` 添加到千星沙箱中（即：不要对本文件创建脚本映射。）
 
 运行环境是 **Lua 5.3**，如需与本工程一致的解析行为，可在工作区放一个 `.luarc.json`：
 
