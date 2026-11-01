@@ -1,0 +1,13 @@
+{
+    "schemaVersion": 1,
+    "generatedAt": "2026-11-01T12:00:00.000Z",
+    "files": [
+      {
+        "file": "mihoyo_client_ui_api.d.lua",
+        "algorithm": "sha256",
+        "hash": "f93623fc390df388065eb90d7df50a9795fe4368b8ee871fe2f2c19172d83402",
+        "version": "0.0.1.710",
+        "updatedAt": "2026-11-01T12:00:00.000Z"
+      }
+    ]
+}
