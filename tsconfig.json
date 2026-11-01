@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["ESNext"],
+    "types": ["node", "mocha"],
+    "module": "commonjs",
+		"skipLibCheck": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"forceConsistentCasingInFileNames": true,
+		"noUncheckedIndexedAccess": true,
+    "strict": true,
+    // 仅做类型检查：产物由 rolldown 打包到 dist/，无需 tsc 输出
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "rolldown.config.mts"]
+}

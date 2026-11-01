@@ -1,0 +1,23 @@
+# 源码与构建配置
+.vscode/**
+.vscode-test/**
+out/**
+src/**
+rolldown.config.mts
+**/tsconfig.json
+**/*.map
+**/*.ts
+**/.vscode-test.*
+
+# 包管理器与临时产物
+pnpm-lock.yaml
+*.tgz
+*.tsbuildinfo
+mihoyo_client_ui_api.d.lua
+fileVersion.json
+ABOUT.md
+
+# 版本管理工具
+.gitignore
+.git/
+.github/

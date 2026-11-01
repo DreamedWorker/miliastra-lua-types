@@ -1,0 +1,66 @@
+{
+  "name": "typed-miliastra-api",
+  "displayName": "千星奇域类型注解",
+  "version": "0.0.1",
+  "description": "为你的 IDE 提供代码补全与提示",
+  "publisher": "yuan-shine",
+  "repository": "https://github.com/DreamedWorker/miliastra-lua-types",
+  "engines": {
+    "vscode": "^1.144.0"
+  },
+  "icon": "./icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "extensionDependencies": ["sumneko.lua"],
+  "contributes": {
+    "configuration": {
+      "title": "千星奇域类型注解",
+      "properties": {
+        "typed-miliastra-api.mirrorBaseUrl": {
+          "type": "string",
+          "default": "https://gh-proxy.org/https://raw.githubusercontent.com/DreamedWorker/miliastra-lua-types/main",
+          "markdownDescription": "镜像站下载地址前缀（不含文件名，末尾不写 `/`）。仅当下载时选择「镜像站」后生效。"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "typed-miliastra-api.download-type-file",
+        "category": "千星奇域类型注解",
+        "title": "下载或更新类型注解文件"
+      },
+      {
+        "command": "typed-miliastra-api.open-tutorial",
+        "title": "打开千星奇域 UGC 教程",
+        "category": "千星奇域类型注解",
+        "icon": "$(globe)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "typed-miliastra-api.open-tutorial",
+          "group": "navigation",
+          "order": 100
+        }
+      ]
+    }
+  },
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "rolldown --config",
+    "pack": "vsce package",
+    "check-types": "tsc --noEmit"
+  },
+  "packageManager": "pnpm@12.16.1",
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.6",
+    "@types/vscode": "^1.144.0",
+    "reactive-vscode": "^1.0.2",
+    "rolldown": "^1.2.16",
+    "typescript": "^7.0.2"
+  }
+}
